@@ -39,7 +39,6 @@ class UsersController extends AppController {
 				));	
 	        } 
 	    }
-
     	$this->layout = 'login';
 	}
 

@@ -59,8 +59,29 @@ class UnitsController  extends AppController {
 			),
 		));
 
-		$this->render('admin_unit_list');
-
+		$this->set(array(
+			'values' => $values,
+			'active_menu' => 'master',
+			'module_title' => 'Daftar Sub Unit',
+			'urlAdd' => array(
+	            	'controller' => 'units',
+		            'action' => 'admin_sub_add',
+		            'admin' => true,
+	        ),
+        	'urlEdit' => array(
+        		'controller' => 'units',
+        		'action' => 'admin_sub_edit',
+        		'admin' => true,
+        	),
+        	'searchUrl' => array(
+        		'controller' => 'units',
+				'action' => 'search',
+				'sub_lists',
+				'admin' => true,
+        	),
+        	'text' => __('Hapus Sub Unit'),
+        	'textAdd' => __('Tambah Sub Unit'),
+		));
 	}	
 
 	function admin_lists(){

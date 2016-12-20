@@ -1518,3 +1518,12 @@ ul.document li{
   
     width: 600%;
 }
+
+.alert-warning {
+    background-image: linear-gradient(to bottom, #fcf8e3 0px, #f8efc0 100%);
+    background-repeat: repeat-x;
+    border-color: #f5e79e;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
